@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/*! basic--fix-of-project */
+:root {
+    --main-color: #f5deb3;
+}
+
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+
+}
+
+.header.navbar {
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 90px);
+    width: 300px;
+    box-shadow: 0px 20px 14px 0px black/75%;
+    right: -100%;
+}
+
+.headar .navbar.active {
+    right: 30px;
+}
+
+.header.navbar a {
+    color: black;
+    display: block;
+    margin: 150px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+html {
+    background: url(images/field.jpeg) 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
+
+/*! intro-to-logo-icons-and-headside-section */
+.logo img {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.container {
+    background: url(images/arkaplan.jpeg)100%;
+    margin: 20px;
+    padding: 10px;
+    width: 550px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.search-main {
+    background-color: #fff;
+    height: 30px;
+    margin: 208px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.tbox-search {
+    float: left;
+    background: none;
+    width: 180px;
+    border: none;
+    outline: none;
+    color: rgb(2, 1, 1);
+    font-size: 13px;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+
+}
+
+.container img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -13px;
+    width: 120px;
+    height: 90px;
+    border-radius: 30px;
+}
+
+.div side-menu {
+    width: 300px;
+    height: 40px;
+    border: 2px;
+    display: flex;
+    align-items: center;
+
+}
+
+.links ul li {
+    margin: 30px;
+    margin-right: -10px;
+    padding: 15px;
+    display: flex;
+    text-align: justify;
+    gap: 20px;
+}
+
+.links ul li a {
+    margin-right: -10px;
+    font-size: 15px;
+    color: black;
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1.5px solid transparent;
+}
+
+.links ul li a:active,
+.links ul li a:hover {
+    border-color: black;
+    padding-bottom: 1.5px;
+
+}
+
+.side-menu {
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons {
+    padding: 30px;
+    position: static;
+    display: inline-flex;
+
+}
+
+.icons i {
+    margin: 15px;
+    align-items: center;
+
+}
+
+/*! end-of-the-logo--icons-and-headside-section */
+/*! body-in-menu-section-start */
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+
+}
+
+.menu {
+    width: 650px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 2px;
+    background: fixed;
+
+}
+
+.menu h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu span {
+    text-transform: uppercase;
+    color: darkblue;
+
+}
+
+.menu .box-container .box {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 25px;
+    min-height: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .box-container .box .menu-category {
+    font-size: 12px;
+
+}
+
+.menu .box-container .box h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 10px 0;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.menu .box-container .box h3:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.menu .box-container .box .price {
+    font-size: 15px;
+    padding: 0.5rem 0;
+
+}
+
+.menu .box-container .box .price span {
+    font-size: 12px;
+    font-weight: 200;
+    text-decoration: line-through;
+
+}
+
+.menu .box-container .box img {
+    height: 120px;
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+
+.menu .box-container .box img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+
+}
+
+.btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+}
+
+/*! body-in-menu-section-end */
+/*! body-in-slogan-section-start */
+
+
+.container2 {
+    width: 550px;
+    height: 300px;
+    margin-left: 750px;
+    margin-top: -250px;
+    padding: 5px;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    background: url(images/kuruıncır.jpeg) 100%;
+    border: 3px solid black;
+    border-radius: 20px;
+    animation: color-wave 18s infinite;
+    ;
+}
+
+@keyframes color-wave {
+    0% {
+        background: url(images/elma.jpeg);
+    }
+
+    25% {
+        background: url(images/antepfıstığı.jpeg);
+    }
+
+    50% {
+        background: url(images/arkaplan.jpeg);
+    }
+
+    75% {
+        background: url(images/fıstık.jpeg) 100%;
+    }
+
+    100% {
+        background: url(images/field.jpeg);
+    }
+}
+
+.container2 h2 {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container2 p {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.container2 a {
+    margin: 20px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: transparent;
+    border-radius: 15px;
+    color: rgb(4, 3, 3);
+    text-decoration: dotted;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container2 a:hover {
+    transform: scale(1.1);
+    z-index: 2;
+
+}
+
+/*! body-in-slogan-section-end */
+/*! footer-section-start */
+
+.footer {
+    position: fixed;
+    bottom: 0%;
+    left: 0px;
+    width: 50%;
+    height: 80px;
+    padding: 10px;
+    background: url(images/field.jpeg)no-repeat;
+    border-radius: 35px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+.footer-col {
+    width: 30%;
+    padding: -10px;
+
+}
+
+.footer-col h4 {
+    font-size: 13px;
+    color: #060101;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    margin: 8px 8px;
+    font-weight: 300;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5 ease;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 3px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+.footer-col ul li a {
+    display:flex;
+    width: fit-content;
+    height: 13px;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+    font-weight: 300;
+  
+    transition: all 0.5 ease;
+}
+
+.col {
+    margin-left: 600px;
+    margin-top: -70px;
+    width: 50%;
+    height: 80px;
+    display: block;
+    position: fixed;
+}
+
+
+.footer-col .social-links {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 60%;
+    color: #060101;
+    transition: all 0.4 ease;
+
+}
+
+.footer-col .social-links a {
+    display:grid;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    margin: 3px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+    transition: 0.5;
+
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #f1f1ea;
+    border-radius: 5px;
+    border-color: #060101;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+/*! footer-section-end */
