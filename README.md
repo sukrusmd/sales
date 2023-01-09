@@ -6,4 +6,4 @@
 
 <p> This is my first project consisting of coding the design of the imaginary nut manufacturer's web page! </p> 
 
-![](ekrangoruntusu.gif)
+![](ekran.gif)
